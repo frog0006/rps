@@ -1,4 +1,5 @@
 import random
+import pygame
 
 options = ("rock", "paper", "scissors")
 running = True

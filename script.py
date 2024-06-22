@@ -1,10 +1,9 @@
 import random
-import pygame
 
 options = ("rock", "paper", "scissors")
 running = True
 
-while running:
+while running == True:
 
     player = None
     computer = random.choice(options)
@@ -16,17 +15,17 @@ while running:
     print(f"Computer: {computer}")
 
     if player == computer:
-        print("It's a tie!")
+        print("It's a tie")
     elif player == "rock" and computer == "scissors":
-        print("You win!")
+        print("You win")
     elif player == "paper" and computer == "rock":
-        print("You win!")
+        print("You win")
     elif player == "scissors" and computer == "paper":
-        print("You win!")
+        print("You win")
     else:
-        print("You lose!")
+        print("You lose")
 
     if not input("Play again? (y/n): ").lower() == "y":
         running = False
 
-print("Thanks for playing!")
+print("Thanks for playing!!")
